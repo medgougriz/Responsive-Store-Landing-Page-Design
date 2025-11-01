@@ -1,9 +1,10 @@
+/* Similarities tinks */
 body {
     background-color: antiquewhite;
     font-family: cursive;
 
 }
-
+/* css for header i use display:flux */
 header {
     display: flex;
     justify-content: space-around;
@@ -16,6 +17,7 @@ header {
     }
 
     .nav {
+        /* css for nav i use display:flux */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,6 +37,7 @@ header {
 }
 
 .search {
+    /* css for search and make icon inside and input */
     margin-top: 2px;
     display: flex;
     align-items: center;
@@ -63,8 +66,8 @@ header {
 
 main {
     margin: 0;
-
     #Home {
+        /* css for section Home */
         margin: 40px;
         display: flex;
         justify-content: center;
@@ -111,6 +114,7 @@ main {
 
     #Products {
         .Products {
+             /* css for section Products */
             margin: 40px;
             display: flex;
             justify-content: space-around;
@@ -163,6 +167,7 @@ main {
     }
 
     #Categories {
+        /* css for section Categories */
         .Categories {
             margin: 40px;
             display: flex;
@@ -203,6 +208,7 @@ main {
 }
 
 .footer {
+    /* css for Footer */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,6 +220,7 @@ main {
 }
 
 #ContactUs {
+    /* css for section Contact Us */
     .ContactUs {
         h4 {
             text-align: center;
@@ -257,6 +264,7 @@ main {
 
 
 @media (max-width: 768px) {
+    /* css for phone if the width is min than 768px the style change to this */
     header {
         display: flex;
         flex-direction: column;
@@ -307,38 +315,42 @@ main {
                 }
             }
         }
-    }
 
-    main #Products .Products {
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-    }
+        #Products {
+            .Products {
+                flex-direction: column;
+                align-items: center;
+                margin: 20px;
 
-    main #Categories .Categories {
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-    }
+                div {
+                    width: 90%;
+                    height: auto;
+                }
+            }
+        }
 
-    main #Products .Products div {
-        width: 90%;
-        height: auto;
-    }
+        #Categories {
+            .Categories {
+                flex-direction: column;
+                align-items: center;
+                margin: 20px;
 
-    main #Categories .Categories div {
-        width: 90%;
-        height: auto;
+                div {
+                    width: 90%;
+                    height: auto;
+                }
+            }
+
+        }
     }
 
     .footer {
         flex-direction: column;
         text-align: center;
         gap: 20px;
-    }
-
-    .footer .last {
-        margin-top: 20px;
+        .last {
+            margin-top: 20px;
+        }
     }
 
     #ContactUs .ContactUs div {
